@@ -1,9 +1,12 @@
+/* Estilo Global */
 * {
     font-family: 'Roboto', sans-serif;
 }
 
 body {
     background-color: #FFF;
+    margin: 0;
+    padding: 0;
 }
 
 .section-padding {
@@ -61,7 +64,7 @@ body {
     color: #000;
 }
 
-.navbar-light .navbar-nav .navbar-link {
+.navbar-light .navbar-nav .nav-link {
     color: #000;
 }
 
