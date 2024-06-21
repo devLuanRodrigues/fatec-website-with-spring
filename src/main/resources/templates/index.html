@@ -37,6 +37,44 @@
     </button>
 </div>
 
+<section id="eventos" class="eventos section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-header text-center pb-5">
+                    <h2>Próximos Eventos</h2>
+                    <p>Fiquem atentos aos nossos próximos eventos:</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th>Título</th>
+                                <th>Data</th>
+                                <th>Descrição</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <!-- Loop para cada evento -->
+                            <tr th:each="agendamento : ${agendamentos}">
+                                <td th:text="${agendamento.titulo}">Título do Evento</td>
+                                <td th:text="${agendamento.data}">Data do Evento</td>
+                                <td th:text="${agendamento.descricao}">Descrição do Evento</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <section id="about" class="about section-padding">
     <div class="container">
         <div class="row">

@@ -1,7 +1,10 @@
 package br.com.fatecmogidascruzes.fatecwebsite.controller;
 
+import br.com.fatecmogidascruzes.fatecwebsite.model.Agendamento;
+import br.com.fatecmogidascruzes.fatecwebsite.service.AgendamentoService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,11 +17,17 @@ public class HomeController {
 
     private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 
+    @Autowired
+    private AgendamentoService agendamentoService;
+
     @GetMapping
     public ModelAndView home(ModelAndView model) {
         logger.info("Accessing the home page");
 
-        // add index.html to model and return the view without using 'return "index"'
+        Iterable<Agendamento> agendamentos = agendamentoService.findAll();
+
+        model.addObject("agendamentos", agendamentos);
+
         model.setViewName("index");
 
         return model;
