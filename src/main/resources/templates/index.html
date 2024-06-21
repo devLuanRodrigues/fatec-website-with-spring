@@ -13,24 +13,17 @@
     </div>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="https://via.placeholder.com/1920x1080" class="d-block w-100" alt="Slide 1">
+            <img th:src="@{/img/agro.jpeg}" class="d-block w-100" alt="Slide 1">
             <div class="carousel-caption d-none d-md-block">
-                <h5>Primeiro Slide</h5>
-                <p>Descrição do primeiro slide.</p>
+                <h5>Agronegócio</h5>
+                <p>O Agronegócio prioriza a formação de profissionais capazes de prospectar mercados agroindustiais diversos, além de identificar e aplicar os recursos naturais e preservação do meio ambiente.</p>
             </div>
         </div>
         <div class="carousel-item">
-            <img src="https://via.placeholder.com/1920x1080" class="d-block w-100" alt="Slide 2">
+            <img th:src="@{/img/ads.jpg}" class="d-block w-100" alt="Slide 2">
             <div class="carousel-caption d-none d-md-block">
-                <h5>Segundo Slide</h5>
-                <p>Descrição do segundo slide.</p>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <img src="https://via.placeholder.com/1920x1080" class="d-block w-100" alt="Slide 3">
-            <div class="carousel-caption d-none d-md-block">
-                <h5>Terceiro Slide</h5>
-                <p>Descrição do terceiro slide.</p>
+                <h5>Análise e Desenvolvimento de Sistemas</h5>
+                <p>O tecnólogo em Análise e Desenvolvimento de Sistemas desenvolve, projeta, implementa e atualiza sistemas de informação. Tem noções de criação de sistemas informatizados, programação de computadores e desenvolvimento de software.</p>
             </div>
         </div>
     </div>
@@ -47,9 +40,17 @@
 <section id="about" class="about section-padding">
     <div class="container">
         <div class="row">
-            <div class="col-12">
-                <h2 class="section-title">Sobre a Fatec</h2>
-                <p>Informações sobre a Fatec Mogi das Cruzes, sua missão, visão, valores e a qualidade de ensino superior gratuito.</p>
+            <div class="col-lg-4 col-md-12 col-12">
+                <div class="about-img">
+                    <img th:src="@{/img/fatecMc.jpg}" alt="..." class="img-fluid">
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+                <div class="about-text">
+                    <h2>Por que estudar na Fatec - Mogi das Cruzes</h2>
+                    <p>A Fatec Mogi das Cruzes é a instituição de Ensino Superior do Alto Tietê cujos cursos têm a melhor alaviação do MEC (Ministério da Educação). Os cursos já avaliados, Agronegócio, Análise e Desenvolvimento de Sistemas e Recursos Humanos, receberam conceito Ótimo ou Excelente no ENADE.</p>
+                    <a href="#" class="btn btn-warning">Saiba Mais</a>
+                </div>
             </div>
         </div>
     </div>
@@ -58,29 +59,91 @@
 <section id="notices" class="notices section-padding">
     <div class="container">
         <div class="row">
-            <div class="col-12">
-                <h2 class="section-title">Notícias</h2>
-                <div class="card">
+            <div class="col-md-12">
+                <div class="section-header text-center pb-5">
+                    <h2>Últimas notícias</h2>
+                    <p>Aqui estão nossas notícias e informações mais atuais. Mantenha-se atualizado!</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-12 col-lg-4">
+                <div class="card text-white text-center bg-dark pb-2">
                     <div class="card-body">
-                        <h5 class="card-title">Título da Notícia</h5>
-                        <p class="card-text">Resumo da notícia ou evento relevante para a comunidade acadêmica.</p>
-                        <a href="#" class="btn btn-primary">Leia mais</a>
+                        <img src="assets/cardSection1.png" alt="">
+                        <h3 class="card-title">Pré-Matrícula</h3>
+                        <p class="lead">Fiquem atentos ao período de abertura da pré-matrícula!</p>
+                        <button class="btn btn-warning text-dark">Saiba mais</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-4">
+                <div class="card text-white text-center bg-dark pb-2">
+                    <div class="card-body">
+                        <img src="assets/cardSection1.png" alt="">
+                        <h3 class="card-title">Pré-Matrícula</h3>
+                        <p class="lead">Fiquem atentos ao período de abertura da pré-matrícula!</p>
+                        <button class="btn btn-warning text-dark">Saiba mais</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-4">
+                <div class="card text-white text-center bg-dark pb-2">
+                    <div class="card-body">
+                        <img src="assets/cardSection1.png" alt="">
+                        <h3 class="card-title">Pré-Matrícula</h3>
+                        <p class="lead">Fiquem atentos ao período de abertura da pré-matrícula!</p>
+                        <button class="btn btn-warning text-dark">Saiba mais</button>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
 </section>
 
 <section id="depoimentos" class="depoimentos section-padding">
     <div class="container">
         <div class="row">
-            <div class="col-12">
-                <h2 class="section-title">Depoimentos</h2>
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Nome do Aluno</h5>
-                        <p class="card-text">Depoimento do aluno sobre a experiência na Fatec Mogi das Cruzes.</p>
+            <div class="col-md-12">
+                <div class="section-header text-center pb-5">
+                    <h2>Depoimentos</h2>
+                    <p>Acompanhe aqui os depoimentos dos alunos formados em nossa instituição.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="conl-12 col-md-12 col-lg-4">
+                <div class="card text-light text-center bg-white pb-2">
+                    <div class="card-body text-dark">
+                        <div class="img-area mb-4">
+                            <img src="assets/cardSection1.png" alt="" class="img-fluid">
+                        </div>
+                        <h3 class="card-title">Amanda</h3>
+                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, autem?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-4">
+                <div class="card text-light text-center bg-white pb-2">
+                    <div class="card-body text-dark">
+                        <div class="img-area mb-4">
+                            <img src="assets/cardSection1.png" alt="" class="img-fluid">
+                        </div>
+                        <h3 class="card-title">João</h3>
+                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, dolorum.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-4">
+                <div class="card text-light text-center bg-white pb-2">
+                    <div class="card-body text-dark">
+                        <div class="img-area mb-4">
+                            <img src="assets/cardSection1.png" alt="" class="img-fluid">
+                        </div>
+                        <h3 class="card-title">Pedro</h3>
+                        <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, quod?</p>
                     </div>
                 </div>
             </div>
@@ -91,13 +154,60 @@
 <section id="desenvolvimento" class="desenvolvimento section-padding">
     <div class="container">
         <div class="row">
-            <div class="col-12">
-                <h2 class="section-title">Desenvolvimento</h2>
-                <div class="card">
+            <div class="col-md-12">
+                <div class="section-header text-center pb-5">
+                    <h2>Desenvolvido por:</h2>
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card text-center">
                     <div class="card-body">
-                        <h5 class="card-title">Título do Projeto</h5>
-                        <p class="card-text">Descrição breve do projeto de desenvolvimento realizado por alunos e professores.</p>
-                        <a href="#" class="btn btn-primary">Saiba mais</a>
+                        <img th:src="@{/img/JuliaTorres.jpg}" alt="" class="img-fluid rounded-circle">
+                        <h3 class="card-title py-2">Julia Torres</h3>
+                        <p class="card-text">
+                            Designer
+                        </p>
+                        <p class="socials">
+                            <i class="bi bi-linkedin text-dark mx-1"></i>
+                            <i class="bi bi-behance text-dark mx-1"></i>
+                            <i class="bi bi-github text-dark mx-1"></i>
+                            <i class="bi bi-instagram text-dark mx-1"></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <img th:src="@{/img/LuanRodrigues.jpg}" alt="" class="img-fluid rounded-circle">
+                        <h3 class="card-title py-2">Luan Rodrigues</h3>
+                        <p class="card-text">
+                            Desenvolvedor
+                        </p>
+                        <p class="socials">
+                            <i class="bi bi-linkedin text-dark mx-1" href=""></i>
+                            <i class="bi bi-github text-dark mx-1"></i>
+                            <i class="bi bi-instagram text-dark mx-1"></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <img th:src="@{/img/HenriqueLopes.jpg}" alt="" class="img-fluid rounded-circle">
+                        <h3 class="card-title py-2">Henrique Lopes</h3>
+                        <p class="card-text">
+                            Desenvolvedor
+                        </p>
+                        <p class="socials">
+                            <i class="bi bi-linkedin text-dark mx-1" href=""></i>
+                            <i class="bi bi-github text-dark mx-1"></i>
+                            <i class="bi bi-instagram text-dark mx-1"></i>
+                        </p>
                     </div>
                 </div>
             </div>
