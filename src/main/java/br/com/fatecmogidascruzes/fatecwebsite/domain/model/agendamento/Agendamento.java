@@ -1,4 +1,4 @@
-package br.com.fatecmogidascruzes.fatecwebsite.model;
+package br.com.fatecmogidascruzes.fatecwebsite.domain.model.agendamento;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;

@@ -1,4 +1,4 @@
-package br.com.fatecmogidascruzes.fatecwebsite.controller;
+package br.com.fatecmogidascruzes.fatecwebsite.config.controllers.handlers;
 
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ControllerAdvice;
