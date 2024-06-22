@@ -1,5 +1,5 @@
 # 🌐 Fatec Website com Spring
-Bem-vindo ao projeto Fatec Website! Este é um aplicativo Spring Boot desenvolvido para gerenciar agendamentos na Fatec Mogi das Cruzes. Ele oferece funcionalidades para autenticação de usuários, agendamento de compromissos e administração do sistema.
+Bem-vindo ao projeto Fatec Website! Este é um aplicativo Spring Boot desenvolvido para gerenciar eventos na Fatec Mogi das Cruzes. Ele oferece funcionalidades para autenticação de usuários, evento de compromissos e administração do sistema.
 
 ## Primeiros Passos 🚀
 
@@ -33,8 +33,8 @@ A aplicação utiliza um mecanismo simples de autenticação baseada em formulá
 - Autenticação de Usuários 🔑
   - Funcionalidade de login para usuários.
 - Gerenciamento de Agendamentos 📅
-  - Criar, atualizar, excluir e listar agendamentos.
+  - Criar, atualizar, excluir e listar eventos.
 - Interface de Administração 🛠️
-  - Gerenciar usuários e agendamentos.
+  - Gerenciar usuários e eventos.
 
 

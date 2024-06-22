@@ -60,10 +60,10 @@
                             </thead>
                             <tbody>
                             <!-- Loop para cada evento -->
-                            <tr th:each="agendamento : ${agendamentos}">
-                                <td th:text="${agendamento.titulo}">Título do Evento</td>
-                                <td th:text="${agendamento.data}">Data do Evento</td>
-                                <td th:text="${agendamento.descricao}">Descrição do Evento</td>
+                            <tr th:each="evento : ${eventos}">
+                                <td th:text="${evento.titulo}">Título do Evento</td>
+                                <td th:text="${evento.data}">Data do Evento</td>
+                                <td th:text="${evento.descricao}">Descrição do Evento</td>
                             </tr>
                             </tbody>
                         </table>

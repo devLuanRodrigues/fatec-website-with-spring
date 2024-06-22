@@ -1,4 +1,4 @@
-package br.com.fatecmogidascruzes.fatecwebsite.domain.model.agendamento;
+package br.com.fatecmogidascruzes.fatecwebsite.domain.model.evento;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -6,7 +6,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import java.time.LocalDate;
 
 @Document(collection = "agendamentos")
-public class Agendamento {
+public class Evento {
 
     @Id
     private String id;

@@ -68,6 +68,7 @@
             <label for="password" class="form-label">Senha</label>
             <input type="password" class="form-control" id="password" required>
         </div>
+        <div id="loginError"></div>
         <div class="d-grid gap-2">
             <button type="submit" class="btn btn-primary">Login</button>
         </div>
@@ -98,7 +99,8 @@
             body: JSON.stringify({ email, password })
         }).then( async (response) =>  {
             if (response.status === 401) {
-                alert('E-mail ou senha inválidos');
+                const loginError = document.querySelector('#loginError');
+                loginError.innerHTML = '<div class="alert alert-danger" role="alert">E-mail ou senha inválidos!</div>';
                 return;
             }
 
