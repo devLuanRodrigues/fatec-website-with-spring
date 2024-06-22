@@ -31,6 +31,11 @@ public class AdminController {
         return model;
     }
 
+    @GetMapping("/login")
+    public ModelAndView login() {
+        return new ModelAndView("/pages/login/index");
+    }
+
     @PostMapping("/salvar")
     public String salvarAgendamento(@ModelAttribute Agendamento agendamento) {
         agendamentoService.save(agendamento);
